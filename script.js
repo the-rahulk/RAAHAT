@@ -19,4 +19,20 @@ $(document).ready(function(){
         backSpeed: 60,
         loop: true
     });
+
+    // popup window
+
+    const popup = document.querySelector('.popup');
+    const close = document.querySelector('.close');  
+
+    window.onload = function(){
+        setTimeout(function(){
+            // popup.style.display = "block"
+             popup.style.display = "none"
+        }, 2000)
+    }
+
+    close.addEventListener('click', () => {
+        popup.style.display = "none"
+    })
 });
