@@ -70,19 +70,31 @@ textarea{
     display: none;
 }
 
+.space{
+  height: 15px;
+}
+
 /* Contact Section CSS */
 
+/* .outer-container{
+  position: relative;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 .container {
-    position: relative;
+    position: absolute;
     width: 100%;
-    min-height: 100vh;
     padding-top: 5rem;
     background-color: #fafafa;
-    overflow: hidden;
+    overflow: scroll;
     display: flex;
-    align-items: center;
     justify-content: center;
-  }
+    text-align: center;
+    align-items: center;
+}
   
   .form {
     width: 100%;
@@ -428,7 +440,7 @@ textarea{
 
 @media (max-width: 480px) {
   .container {
-    padding: 1.5rem;
+    padding-top: 5rem;
   }
 
   .contact-info:before {
@@ -475,8 +487,15 @@ textarea{
 }
 
 @media (max-width: 480px) {
+
+    .navbar{
+      z-index: 1100;
+
+    }
     .container {
-      padding: 1.5rem;
+      padding-top: 5rem;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   
     .contact-info:before {

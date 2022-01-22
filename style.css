@@ -13,6 +13,9 @@
     margin: auto;
 }
 
+body{
+    font-family: "Poppins";
+}
 
 /* navbar styling  */
 
@@ -21,7 +24,6 @@
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
 .navbar.sticky{
@@ -206,10 +208,11 @@
 /* hazard section CSS   */
 
 .title{
-    display: flex;
+    display: relative;
     justify-content: center;
     align-items: center;
-    background: #e0f7fa; 
+    text-align: center;
+    background: #fff; 
     padding: 30px;
 }
 
@@ -217,14 +220,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #e0f7fa; 
+    background: #fff; 
 }
 
 .title3{
-    display: flex;
+    display: relative;
     justify-content: center;
+    text-align: center;
     align-items: center;
-    background: #fff;
+    background: #EEEEEE;
     padding: 15px 0 20px; 
 }
 
@@ -237,7 +241,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #000;
+    background: #fff;
 }
 
 .hazard .container{
@@ -251,12 +255,11 @@
 
 .hazard .container .card{
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 300px;
     margin: 20px;
     overflow: hidden;
-    /* box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    border-radius: 15px; */
+    border-radius: 15px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,16 +267,16 @@
 
 .hazard .container .card .content{
     position: absolute;
-    bottom: -160px;
+    bottom: -100px;
     width: 100%;
     height: 160px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     z-index: 10;
     flex-direction: column;
-    /* backdrop-filter: blur(15px); */
-    background: #fff;
+    backdrop-filter: blur(15px);
+    /* background: #fff; */
     box-shadow: 0 -10px 10px rgba(0,0,0,0.1);
     border: 1px solid rgba(255,255,255,0.2);
     transition: bottom 0.5s;
@@ -285,34 +288,30 @@
 }
 
 .hazard .container .card .content .contentbox h3{
-    color: #000;
+    color: #fff ;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family:  'Ubuntu', sans-serif;
     font-weight: 700;
     font-size: 22px;
-    text-align: center;
+    text-align: left;
+    padding-left: 10px;
     margin: 10px 0 15px;
     line-height: 1.1rem;
     transition: 0.5s;
-    opacity: 0;
-    transform: translateY(-20px);
-}
-
-.hazard .container .card:hover .content .contentbox h3{
+    /* opacity: 0;
+    transform: translateY(-20px); */
     opacity: 1;
-    transform: translateY(0px);   
+    transform: translateY(0px);
 }
 
 .hazard .container .card .content .contentbox p{
-    color: #606060;
+    color: #fff;
     /* text-transform: uppercase; */
     /* letter-spacing: 2px; */
     padding: 0 10px 0 10px ;
-    font-family:  'Ubuntu', sans-serif;
     font-weight: 800;
     font-size: 10px;
-    text-align: center;
+    text-align: left;
     margin: 10px 0 15px;
     line-height: 1.1rem;
     transition: 0.5s;
@@ -369,15 +368,17 @@
     height: 400px;
 }
 
+
 /* Update section */
 
 .update{
-    width: 85%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    background: #EEEEEE;
 }
 
 .column{
@@ -395,7 +396,8 @@ footer{
     width: 100%;
     position: absolute;
     /* bottom: 0; */
-    background: linear-gradient(to right, #00093c, #2d0b00);
+    /* background: linear-gradient(to right, #00093c, #2d0b00); */
+    background: #000;
     color: #fff;
     padding: 20px 0 30px;
     border-top-left-radius: 125px;
