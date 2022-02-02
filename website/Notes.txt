@@ -1,0 +1,41 @@
+                                            RAAHAT                          
+                                                                                                                        A
+1. Homepage:
+2. Map
+3. News
+4. Resources 
+5. Contact
+6. To Find
+  - Login/Sign Up
+  - Sub HomePage
+  - Profile Page 
+  - Result DIsplay Page
+  - Data Upload Page 
+7. About Us
+
+- Fundraiser(External)
+
+Homepage:
+
+Maps: (Sidebar)
+- Wind gusts
+- Rain Accumulation
+- Snow
+- Thunderstorms
+- Waves
+- Air Quality
+- Weather Warning
+
+Resources:
+- Helpline no.
+- Videos
+- Facts/Myths
+- NGO's List
+- Materials/Supplies
+- 
+
+To Find:
+Login/Signup/Sign Out
+Homepage
+How it works
+Profile
