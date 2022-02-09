@@ -31,20 +31,22 @@
     <nav class="navbar">
         <div class="max-width">
             <div class="logo">
-                <a href="#">R<span>AA</span>H<span>A</span>T</a>
+                <a href="../index.html">R<span>AA</span>H<span>A</span>T</a>
             </div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Feed</a></li>
-                <li><a href="#">How it works?</a></li>
-                <li><a href="#">Profile</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.php">Feed</a></li>
+                <li><a href="how-it-works/index.html">How it works?</a></li>
+                <li><a href="profile/index.php">Profile</a></li>
 
                 <?php 
                     if(!isset($_SESSION['auth_user'])){
                 ?>
                     <li><a href="#">SignIn/SignUp</a></li>
                 <?php } else { ?>
-                <li><a href="#">SignOut</a></li>
+                <!-- <li><a href="#">SignOut</a></li> -->
+                <form action="code.php" method="POST">
+                  <button type="submit" name="logout_btn" class="dropdown-item">SignOut</button>
                 <?php } ?>
             </ul>
             <div class="menu-btn">
