@@ -21,17 +21,19 @@ if(isset($_POST['signup-btn'])) {
     }
     else {
 
+        $hash = password_hash($password, PASSWORD_DEFAULT);
+
         $user_query = "INSERT INTO users (name, email, phone_no, password) VALUES ('$name','$email','$phone','$hash')";
 
         $user_query_run = mysqli_query($con, $user_query);
 
-            if($user_query_run) {
-                echo '<script>alert("Sign Up Succesfull, Proceed to Login.")</script>';
-                header("location: index.php");
-            } else {
-                echo '<script>alert("User Registration Failed")</script>';
-                header("location: index.php");
-            }
+        if($user_query_run) {
+            echo '<script>alert("Sign Up Succesfull, Proceed to Login.")</script>';
+            header("location: index.php");
+        } else {
+            echo '<script>alert("User Registration Failed")</script>';
+            header("location: index.php");
+        }
         
     }
 }

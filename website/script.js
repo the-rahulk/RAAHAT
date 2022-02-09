@@ -27,8 +27,8 @@ $(document).ready(function(){
 
     window.onload = function(){
         setTimeout(function(){
-            // popup.style.display = "block"
-             popup.style.display = "none"
+            popup.style.display = "block"
+             //popup.style.display = "none"
         }, 2000)
     }
 

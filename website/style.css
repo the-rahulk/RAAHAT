@@ -170,7 +170,7 @@ body{
     color: #333;
     line-height: 1em;
     font-weight: 300;
-    font-size: 2em;
+    font-size: 25px;
 }
 
 .content-box .content h3 span{
@@ -184,7 +184,7 @@ body{
 }
 
 .content-box .content h4{
-    font-size: 25px;
+    font-size: 15px;
     color: black;
     line-height: 1em;
 }

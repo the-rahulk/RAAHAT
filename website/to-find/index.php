@@ -44,9 +44,11 @@
                 ?>
                     <li><a href="#">SignIn/SignUp</a></li>
                 <?php } else { ?>
+                    <li>
                 <!-- <li><a href="#">SignOut</a></li> -->
-                <form action="code.php" method="POST">
-                  <button type="submit" name="logout_btn" class="dropdown-item">SignOut</button>
+                <form action="profile/code.php" class="signoutform" method="POST">
+                  <button type="submit" name="logout_btn" class="sign-out">SignOut</button>
+                </li>
                 <?php } ?>
             </ul>
             <div class="menu-btn">
@@ -83,8 +85,8 @@
                     <br><br>
                 <h3>Age:</h3>
                 <p><?php echo $row['age']; ?></p>
-                <h3>Gender:</h3>
-                <p><?php echo $row['gender']; ?></p>
+                <!-- <h3>Gender:</h3>
+                <p><?php // echo $row['gender']; ?></p> -->
                 <h3>Last Known Location:</h3>
                 <p><?php echo $row['location']; ?></p>
                 <h3>If found Contact</h3>

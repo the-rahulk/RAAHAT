@@ -61,7 +61,7 @@
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: black;
+    color: crimson;
 }
 .navbar.sticky .menu li a:hover{
     color: rgb(0, 0, 0);
@@ -292,18 +292,6 @@
   h1{
     text-align: center;
     font-size: 30px;
-  }
-
-  .content p{
-    font-size: 25px;
-  }
-
-  .content h2 {
-    font-size: 28px;
-  }
-
-  .content {
-    font-family: 'Ubuntu', sans-serif;
   }
   
   

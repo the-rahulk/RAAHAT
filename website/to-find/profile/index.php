@@ -41,14 +41,13 @@
         <?php 
                     if(!isset($_SESSION['auth_user'])){
                 ?>
-                    <li><a href="../register/index.php">SignIn/SignUp</a></li>
+                    <li><a href="#">SignIn/SignUp</a></li>
                 <?php } else { ?>
-                <li>
-                  
-                <!-- <a href="#">SignOut</a> -->
-                <form action="code.php" method="POST">
-                  <button type="submit" name="logout_btn" class="dropdown-item">SignOut</button>
-              </li>
+                    <li>
+                <!-- <li><a href="#">SignOut</a></li> -->
+                <form action="code.php" class="signoutform" method="POST">
+                  <button type="submit" name="logout_btn" class="sign-out">SignOut</button>
+                </li>
                 <?php } ?>
       </ul>
       <div class="menu-btn">

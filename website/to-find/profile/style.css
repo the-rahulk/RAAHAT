@@ -186,6 +186,16 @@ body{
     background: crimson;
 }
 
+.signoutform .sign-out{
+    border: 0px;
+    padding-left: 20px;
+    background: transparent;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
 
 /* responsive */
 
