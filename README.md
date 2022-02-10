@@ -41,7 +41,7 @@ LAMP: https://www.youtube.com/watch?v=zWTRNXmtVYM <br>
 •	Open Your browser put inside browser “http://localhost/RAAHAT/admin_panel/login.php” <br>
 •	Login Details <br>
 •	Login Details for admin :  
-1)	Username: admin@covidcare.com <br>
+1)	Username: admin@raahat.com <br>
 2)	Password: 1234 <br>
 	
 Done!!
